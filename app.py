@@ -180,15 +180,14 @@ def update_map(selected_var, selected_view, relayoutData):
     ))
 
     fig.update_layout(
-        mapbox=dict(
-            center=center,
-            zoom=zoom,
-            style="carto-positron"
-        ),
-        margin={"r": 0, "t": 40, "l": 0, "b": 0},
-        height=480,
-        width=980
-    )
+    mapbox=dict(
+        center=center,
+        zoom=zoom,
+        style="carto-positron"
+    ),
+    margin={"r": 0, "t": 40, "l": 0, "b": 0},
+    autosize=True
+)
 
     return fig
 
