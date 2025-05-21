@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #33c8ff;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #105d95;
+    padding: 1rem;
+    border-bottom: 1px solid #0a3e66;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.25rem;
+    margin-left: 0;
+}
+
+.sidebar-map {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 220px;
+    min-width: 220px;
+    padding: 1rem;
+    background-color: #105d95;
+    border-right: 1px solid #0a3e66;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Ensure sidebar content is not bold */
+.sidebar p,
+.sidebar label,
+.sidebar .Select-control,
+.sidebar .Select-placeholder,
+.sidebar .Select-value-label {
+    font-weight: normal !important;
+    font-size: 14px !important;
+    font-family: 'Poppins', sans-serif !important;
+    color: white;
+}
+
+.main-content {
+    flex: 1;
+    padding: 1rem;
+    background-color: #105d95;
+    color: white;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+}
+
+.footer-buttons {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 999;
+}
+
+.footer-buttons button,
+.footer-buttons a {
+    background-color: #964696;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-buttons button:hover,
+.footer-buttons a:hover {
+    background-color: #7b3a7a;
+}
+
+/* Force dropdown menu to be readable */
+.Select-control,
+.Select-menu-outer,
+.Select-value-label,
+.Select-option {
+    color: black !important;
+    background-color: white !important;
+}
+
+.Select-option.is-focused {
+    background-color: #f0f0f0 !important;
+}
