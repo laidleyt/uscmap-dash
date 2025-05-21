@@ -263,4 +263,4 @@ def toggle_about(n_clicks, current_style):
 
 if __name__ == '__main__':
     import os
-    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get("PORT", 8050)))
+    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get("PORT", 8050)))
