@@ -84,7 +84,7 @@ app.layout = html.Div(className='container', children=[
             )
         ]),
         html.Div(className='main-content', children=[
-            dcc.Graph(id='choropleth-map')
+            dcc.Graph(id='choropleth-map', config={"responsive":True})
         ])
     ]),
     html.Div(className='footer-buttons', children=[
