@@ -225,7 +225,7 @@ def toggle_about(n_clicks, current_style):
                    "Moreover, I must issue a caveat for Connecticut and Alaska — CT recently changed their counties to planning areas, "
                    "and the borders are not consistent; because of this, I instituted a 'fuzzy' crosswalk, and these estimates cannot be "
                    "reliably cited; this is merely illustrative and a more serious workaround might be attempted "
-                   "if this project continues in another context. Also, a stylistic caveat: I prefer to project US maps (eg Albers) and not"
+                   "if this project continues in another context. Also, a stylistic caveat: I prefer to project US maps (eg Albers) and not "
                    "flatten them, but it was unavoidable here; so too was the scale legend--vagaries of plotly, dash, etc."),
             html.P("The percent change in each of the following variables from 2018–2023 are mapped here, with their Census data variable name equivalents:"),
             html.Ul([
